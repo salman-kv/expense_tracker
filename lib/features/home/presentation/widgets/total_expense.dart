@@ -33,7 +33,7 @@ class TotalExpenceContainer extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.02,
             ),
             Text(
-              context.watch<HomeBloc>().totalExpense.toString(),
+              '₹${context.watch<HomeBloc>().totalExpense.toString()}',
               style: Theme.of(context)
                   .textTheme
                   .titleLarge!
